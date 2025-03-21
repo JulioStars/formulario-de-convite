@@ -1,0 +1,29 @@
+.form-contact {
+    input {
+        margin-top: .75rem;
+        width: 100%;
+    }
+
+    .error-message {
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+        margin-top: .5rem;
+
+        p {
+            color: var(--danger);
+            font: var(--body-xs);
+        }
+    }
+
+    .input-email-phone {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+        margin-top: 1rem;
+    }
+}
+
+#input-error {
+    border-color: var(--danger);
+}

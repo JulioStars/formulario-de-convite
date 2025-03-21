@@ -1,0 +1,36 @@
+.options-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: .25rem;
+    column-gap: 4px;
+    max-height: 3rem;
+    height: 100%;
+
+    & > .option-radio {
+        border-radius: 6px;
+        padding: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        
+        input {
+            display: none;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &:has(:checked) {
+            background-color: var(--shape-button);
+            font-weight: 500;
+            color: var(--text-heading);
+
+            .icon path {
+                fill: var(--brand-light);
+            }
+        }
+
+    }
+}
