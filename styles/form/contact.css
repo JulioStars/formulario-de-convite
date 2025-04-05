@@ -27,3 +27,12 @@
 #input-error {
     border-color: var(--danger);
 }
+
+@media (width <= 425px) {
+    .form-contact {
+        & .input-email-phone {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
